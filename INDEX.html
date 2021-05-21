@@ -2,10 +2,54 @@
     <main>
         <head>
             <title>Google</title>
+            
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                rel="stylesheet">
+                
             <style>
+
+
                 .google-logo {
                     margin-top: 330px;
                     text-align: center;
+                }
+
+                .wrapper {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 9px;
+                    font-family: Roboto;
+                }
+
+                .about-nav:hover {
+                    background-color: black;
+                }
+
+                .store-nav:hover {
+                    background-color: black;
+                }
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .sign-in {
+                    padding: 9px 23px;
+                    background-color: #1a73e8;
+                    border-radius: 10%;
+                    color: white;
+                    
                 }
 
 
@@ -13,9 +57,34 @@
         </head>
 
         <body>
+            <nav>
+                <div class="left-side-nav">
+                    <a href="" class="about-nav">About</a>
+                    <a href="" class="store-nav">Store</a>
+                </div>
+                <div class="right-side-nav">
+                    <a href="">Gmail</a>
+                    <a href="">Images</a> 
+                    <button>image here</button>
+                    <button class="sign-in">Sign In</button>
+                </div>
+            </nav>
+
             <div class="google-logo">
-            <img src="google_logo.png" alt="Google Logo">   
+                <img src="google_logo.png" alt="Google Logo">   
             </div>
+
+            <div class="wrapper">
+                <div class="search">
+                    <input type="search">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button"> Google Search </button>
+                <button type="button"> I'm Feeling Lucky </button>
+            </div>
+
         </body>
 
 
